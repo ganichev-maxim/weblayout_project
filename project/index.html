@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <title>W-Wave</title>
   </head>
@@ -13,7 +14,10 @@
       <div class="container">
         <div class="header">
           <a href="#" class="header__logo" aria-label="Логотип-ссылка радио W-Wave">
-            <img src="img/logo.svg" alt="Логотип радио W-Wave">
+            <picture>
+              <source media="(max-width: 1200px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo.svg" alt="Логотип радио W-Wave">
+            </picture>
           </a>
 
           <nav class="header__nav">
@@ -40,12 +44,40 @@
             </ul>
           </nav>
 
-          <button class="header__search-button">
+          <button class="header__search-button" aria-label="Поиск">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button>
+        </div>
+      </div>
+
+      <div class="header-bottom-tablet">
+        <div class="container">
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a href="#podcasts" class="header__menu-link link">Подкасты</a>
+              </li>
+
+              <li class="header__menu-item">
+                <a href="#broadcast" class="header__menu-link link">Передачи</a>
+              </li>
+
+              <li class="header__menu-item">
+                <a href="#guests" class="header__menu-link link">Гости</a>
+              </li>
+
+              <li class="header__menu-item">
+                <a href="#playlists" class="header__menu-link link">Плейлисты</a>
+              </li>
+
+              <li class="header__menu-item">
+                <a href="#about" class="header__menu-link link">О нас</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -76,7 +108,11 @@
           <ul class="podcast__list">
             <li class="podcast__item">
               <article class="podcast__card">
-                <img src="img/podcast-1.jpg" alt="Обложка подкаста &quot;Европа. XIX век&quot;" class="podcast__cover">
+                <picture class="podcast__cover">
+                  <source media="(max-width: 576px)" srcset="img/podcast-1-mobile.jpg">
+
+                  <img class="podcast__cover-img" src="img/podcast-1.jpg" alt="Обложка подкаста &quot;Европа. XIX век&quot;">
+                </picture>
 
                 <div class="podcast__content">
                   <time class="podcast__duration">15:43</time>
@@ -91,9 +127,14 @@
                 </div>
               </article>
             </li>
+
             <li class="podcast__item">
               <article class="podcast__card">
-                <img src="img/podcast-2.jpg" alt="Обложка подкаста &quot;О музыке&quot;" class="podcast__cover">
+                <picture class="podcast__cover">
+                  <source media="(max-width: 576px)" srcset="img/podcast-2-mobile.jpg">
+
+                  <img class="podcast__cover-img" src="img/podcast-2.jpg" alt="Обложка подкаста &quot;О музыке&quot;">
+                </picture>
 
                 <div class="podcast__content">
                   <time class="podcast__duration">5:32</time>
@@ -108,9 +149,14 @@
                 </div>
               </article>
             </li>
+
             <li class="podcast__item">
               <article class="podcast__card">
-                <img src="img/podcast-3.jpg" alt="Обложка подкаста &quot;Люди сегодня&quot;" class="podcast__cover">
+                <picture class="podcast__cover">
+                  <source media="(max-width: 576px)" srcset="img/podcast-3-mobile.jpg">
+
+                  <img class="podcast__cover-img" src="img/podcast-3.jpg" alt="Обложка подкаста &quot;Люди сегодня&quot;">
+                </picture>
 
                 <div class="podcast__content">
                   <time class="podcast__duration">8:54</time>
@@ -125,9 +171,14 @@
                 </div>
               </article>
             </li>
+
             <li class="podcast__item">
               <article class="podcast__card">
-                <img src="img/podcast-4.jpg" alt="Обложка подкаста &quot;Хэллоу, Африка!&quot;" class="podcast__cover">
+                <picture class="podcast__cover">
+                  <source media="(max-width: 576px)" srcset="img/podcast-4-mobile.jpg">
+
+                  <img class="podcast__cover-img" src="img/podcast-4.jpg" alt="Обложка подкаста &quot;Хэллоу, Африка!&quot;">
+                </picture>
 
                 <div class="podcast__content">
                   <time class="podcast__duration">9:04</time>
@@ -142,9 +193,14 @@
                 </div>
               </article>
             </li>
+
             <li class="podcast__item">
               <article class="podcast__card">
-                <img src="img/podcast-5.jpg" alt="Обложка подкаста &quot;Обо всём&quot;" class="podcast__cover">
+                <picture class="podcast__cover">
+                  <source media="(max-width: 576px)" srcset="img/podcast-5-mobile.jpg">
+
+                  <img class="podcast__cover-img" src="img/podcast-5.jpg" alt="Обложка подкаста &quot;Обо всём&quot;">
+                </picture>
 
                 <div class="podcast__content">
                   <time class="podcast__duration">7:03</time>
@@ -159,9 +215,14 @@
                 </div>
               </article>
             </li>
+
             <li class="podcast__item">
               <article class="podcast__card">
-                <img src="img/podcast-6.jpg" alt="Обложка подкаста &quot;Физика цвета&quot;" class="podcast__cover">
+                <picture class="podcast__cover">
+                  <source media="(max-width: 576px)" srcset="img/podcast-6-mobile.jpg">
+
+                  <img class="podcast__cover-img" src="img/podcast-6.jpg" alt="Обложка подкаста &quot;Физика цвета&quot;">
+                </picture>
 
                 <div class="podcast__content">
                   <time class="podcast__duration">9:15</time>
@@ -176,9 +237,14 @@
                 </div>
               </article>
             </li>
+
             <li class="podcast__item">
               <article class="podcast__card">
-                <img src="img/podcast-7.jpg" alt="Обложка подкаста &quot;Источник звука&quot;" class="podcast__cover">
+                <picture class="podcast__cover">
+                  <source media="(max-width: 576px)" srcset="img/podcast-7-mobile.jpg">
+
+                  <img class="podcast__cover-img" src="img/podcast-7.jpg" alt="Обложка подкаста &quot;Источник звука&quot;">
+                </picture>
 
                 <div class="podcast__content">
                   <time class="podcast__duration">16:04</time>
@@ -195,7 +261,11 @@
             </li>
             <li class="podcast__item">
               <article class="podcast__card">
-                <img src="img/podcast-8.jpg" alt="Обложка подкаста &quot;Правила этикета&quot;" class="podcast__cover">
+                <picture class="podcast__cover">
+                  <source media="(max-width: 576px)" srcset="img/podcast-8-mobile.jpg">
+
+                  <img class="podcast__cover-img" src="img/podcast-8.jpg" alt="Обложка подкаста &quot;Правила этикета&quot;">
+                </picture>
 
                 <div class="podcast__content">
                   <time class="podcast__duration">6:55</time>
@@ -241,14 +311,19 @@
               <ul class="broadcast__list">
                 <li class="broadcast__item">
                   <article class="broadcast__card">
-                    <img src="img/broadcast-1.jpg" alt="Обложка передачи &quot;О людях и книгах&quot;" class="broadcast__cover">
+                    <picture class="broadcast__cover">
+                      <source media="(max-width: 576px)" srcset="img/broadcast-1-mobile.jpg">
+
+                      <img class="broadcast__cover-img" src="img/broadcast-1.jpg" alt="Обложка передачи &quot;О людях и книгах&quot;">
+                    </picture>
+
                     <div class="broadcast__content">
                       <h3 class="broadcast__title">О людях и книгах</h3>
 
                       <time class="broadcast__time">Анонсируется отдельно</time>
 
                       <a href="#" class="broadcast__more link">
-                        Подробнее
+                        <span>Подробнее</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="12" viewBox="0 0 28 12" fill="none">
                           <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
                         </svg>
@@ -259,7 +334,12 @@
 
                 <li class="broadcast__item">
                   <article class="broadcast__card">
-                    <img src="img/broadcast-2.jpg" alt="Обложка передачи &quot;Графомания td&quot;" class="broadcast__cover">
+                    <picture class="broadcast__cover">
+                      <source media="(max-width: 576px)" srcset="img/broadcast-2-mobile.jpg">
+
+                      <img class="broadcast__cover-img" src="img/broadcast-2.jpg" alt="Обложка передачи &quot;Графомания td&quot;">
+                    </picture>
+
                     <div class="broadcast__content">
                       <h3 class="broadcast__title">Графомания td</h3>
 
@@ -277,7 +357,12 @@
 
                 <li class="broadcast__item">
                   <article class="broadcast__card">
-                    <img src="img/broadcast-3.jpg" alt="Обложка передачи &quot;Не Рим, не Троя&quot;" class="broadcast__cover">
+                    <picture class="broadcast__cover">
+                      <source media="(max-width: 576px)" srcset="img/broadcast-3-mobile.jpg">
+
+                      <img class="broadcast__cover-img" src="img/broadcast-3.jpg" alt="Обложка передачи &quot;Не Рим, не Троя&quot;">
+                    </picture>
+
                     <div class="broadcast__content">
                       <h3 class="broadcast__title">Не Рим, не Троя</h3>
 
@@ -295,7 +380,12 @@
 
                 <li class="broadcast__item">
                   <article class="broadcast__card">
-                    <img src="img/broadcast-4.jpg" alt="Обложка передачи &quot;Эрудит&quot;" class="broadcast__cover">
+                    <picture class="broadcast__cover">
+                      <source media="(max-width: 576px)" srcset="img/broadcast-4-mobile.jpg">
+
+                      <img class="broadcast__cover-img" src="img/broadcast-4.jpg" alt="Обложка передачи &quot;Эрудит&quot;">
+                    </picture>
+
                     <div class="broadcast__content">
                       <h3 class="broadcast__title">Эрудит</h3>
 
@@ -313,7 +403,12 @@
 
                 <li class="broadcast__item">
                   <article class="broadcast__card">
-                    <img src="img/broadcast-5.jpg" alt="Обложка передачи &quot;Тонкости эпох&quot;" class="broadcast__cover">
+                    <picture class="broadcast__cover">
+                      <source media="(max-width: 576px)" srcset="img/broadcast-5-mobile.jpg">
+
+                      <img class="broadcast__cover-img" src="img/broadcast-5.jpg" alt="Обложка передачи &quot;Тонкости эпох&quot;">
+                    </picture>
+
                     <div class="broadcast__content">
                       <h3 class="broadcast__title">Тонкости эпох</h3>
 
@@ -331,7 +426,12 @@
 
                 <li class="broadcast__item">
                   <article class="broadcast__card">
-                    <img src="img/broadcast-6.jpg" alt="Обложка передачи &quot;Живые мысли&quot;" class="broadcast__cover">
+                    <picture class="broadcast__cover">
+                      <source media="(max-width: 576px)" srcset="img/broadcast-6-mobile.jpg">
+
+                      <img class="broadcast__cover-img" src="img/broadcast-6.jpg" alt="Обложка передачи &quot;Живые мысли&quot;">
+                    </picture>
+
                     <div class="broadcast__content">
                       <h3 class="broadcast__title">Живые мысли</h3>
 
@@ -351,6 +451,18 @@
           </div>
         </div>
       </section>
+
+      <div class="broadcast__archive-tablet">
+        <div class="container">
+          <div class="broadcast__archive">
+            <button class="broadcast__archive-btn">Архив</button>
+
+            <div class="broadcast__archive-desc section__text">
+              В архив попадают все передачи, которые вы пропустили! Enjoy:)
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section class="guest section" id="guests">
         <div class="container">
@@ -686,7 +798,12 @@
             <div class="adv__card-content">
               <h2 class="adv__header section__header">Будь с нами на одной волне!</h2>
 
-              <img src="img/adv-separator.svg" alt="Разделитель заголовка" class="adv__separator" role="presentation">
+              <picture class="adv__separator">
+                <source media="(max-width: 576px)" srcset="img/adv-separator-tablet-mobile.svg">
+                <source media="(max-width: 992px)" srcset="img/adv-separator-tablet-mini.svg">
+                <source media="(max-width: 1200px)" srcset="img/adv-separator-tablet.svg">
+                <img src="img/adv-separator.svg" alt="Разделитель заголовка" role="presentation">
+              </picture>
 
               <p class="adv__desc">
                 Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на то, что мы только начали свой путь радиовещателей, нам хочется, чтобы вы могли как следует нас расслышать:)
@@ -719,14 +836,22 @@
               </p>
             </div>
 
-            <img src="img/spiral.svg" alt="Спираль" class="about__top-center" role="presentation">
+            <picture class="about__top-center">
+              <source media="(max-width: 992px)" srcset="img/spiral-tablet.svg">
+              <img src="img/spiral.svg" alt="Спираль" role="presentation">
+            </picture>
 
             <img src="img/dawn.svg" alt="Звезда" class="about__top-right" role="presentation">
           </div>
 
           <ul class="about__person-list">
             <li class="about__person-item">
-              <img src="img/person-1.jpg" alt="Фото Дмитрий Гутенберг" class="about__person-photo">
+              <picture class="about__person-photo">
+                <source media="(max-width: 576px)" srcset="img/person-1-mobile.jpg">
+                <source media="(max-width: 992px)" srcset="img/person-1-tablet-mini.jpg">
+                <source media="(max-width: 1200px)" srcset="img/person-1-tablet.jpg">
+                <img src="img/person-1.jpg" alt="Фото Дмитрий Гутенберг">
+              </picture>
 
               <h3 class="about__person-name">Дмитрий Гутенберг</h3>
 
@@ -734,7 +859,12 @@
             </li>
 
             <li class="about__person-item">
-              <img src="img/person-2.jpg" alt="Фото Анна Васильева" class="about__person-photo">
+              <picture class="about__person-photo">
+                <source media="(max-width: 576px)" srcset="img/person-2-mobile.jpg">
+                <source media="(max-width: 992px)" srcset="img/person-2-tablet-mini.jpg">
+                <source media="(max-width: 1200px)" srcset="img/person-2-tablet.jpg">
+                <img src="img/person-2.jpg" alt="Фото Анна Васильева">
+              </picture>
 
               <h3 class="about__person-name">Анна Васильева</h3>
 
@@ -742,7 +872,12 @@
             </li>
 
             <li class="about__person-item">
-              <img src="img/person-3.jpg" alt="Фото Пётр Дмитриевский" class="about__person-photo">
+              <picture class="about__person-photo">
+                <source media="(max-width: 576px)" srcset="img/person-3-mobile.jpg">
+                <source media="(max-width: 992px)" srcset="img/person-3-tablet-mini.jpg">
+                <source media="(max-width: 1200px)" srcset="img/person-3-tablet.jpg">
+                <img src="img/person-3.jpg" alt="Фото Пётр Дмитриевский">
+              </picture>
 
               <h3 class="about__person-name">Пётр Дмитриевский</h3>
 
@@ -750,7 +885,12 @@
             </li>
 
             <li class="about__person-item">
-              <img src="img/person-4.jpg" alt="Фото Татьяна Флеганова" class="about__person-photo">
+              <picture class="about__person-photo">
+                <source media="(max-width: 576px)" srcset="img/person-4-mobile.jpg">
+                <source media="(max-width: 992px)" srcset="img/person-4-tablet-mini.jpg">
+                <source media="(max-width: 1200px)" srcset="img/person-4-tablet.jpg">
+                <img src="img/person-4.jpg" alt="Фото Татьяна Флеганова">
+              </picture>
 
               <h3 class="about__person-name">Татьяна Флеганова</h3>
 
@@ -835,43 +975,43 @@
             <nav class="footer__top-right">
               <ul class="footer__nav">
                 <li class="footer__nav-item">
-                  <a href="#podcasts" class="footer__nav-link">Подкасты</a>
+                  <a href="#podcasts" class="footer__nav-link link">Подкасты</a>
                 </li>
 
                 <li class="footer__nav-item">
-                  <a href="#broadcast" class="footer__nav-link">Передачи</a>
+                  <a href="#broadcast" class="footer__nav-link link">Передачи</a>
                 </li>
 
                 <li class="footer__nav-item">
-                  <a href="#guests" class="footer__nav-link">Гости</a>
-                </li>
-              </ul>
-
-              <ul class="footer__nav">
-                <li class="footer__nav-item">
-                  <a href="#playlists" class="footer__nav-link">Плейлисты</a>
-                </li>
-
-                <li class="footer__nav-item">
-                  <a href="#" class="footer__nav-link">Сетки</a>
-                </li>
-
-                <li class="footer__nav-item">
-                  <a href="#about" class="footer__nav-link">О нас</a>
+                  <a href="#guests" class="footer__nav-link link">Гости</a>
                 </li>
               </ul>
 
               <ul class="footer__nav">
                 <li class="footer__nav-item">
-                  <a href="#" class="footer__nav-link">Новости</a>
+                  <a href="#playlists" class="footer__nav-link link">Плейлисты</a>
                 </li>
 
                 <li class="footer__nav-item">
-                  <a href="#" class="footer__nav-link">Блоги</a>
+                  <a href="#" class="footer__nav-link link">Сетки</a>
                 </li>
 
                 <li class="footer__nav-item">
-                  <a href="#" class="footer__nav-link">Топы</a>
+                  <a href="#about" class="footer__nav-link link">О нас</a>
+                </li>
+              </ul>
+
+              <ul class="footer__nav">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link link">Новости</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link link">Блоги</a>
+                </li>
+
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link link">Топы</a>
                 </li>
               </ul>
             </nav>
@@ -879,9 +1019,55 @@
         </div>
       </div>
 
+      <div class="footer footer-mobile">
+        <div class="container">
+          <nav class="footer__content">
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a href="#podcasts" class="footer__nav-link link">Подкасты</a>
+              </li>
+
+              <li class="footer__nav-item">
+                <a href="#broadcast" class="footer__nav-link link">Передачи</a>
+              </li>
+
+              <li class="footer__nav-item">
+                <a href="#guests" class="footer__nav-link link">Гости</a>
+              </li>
+
+              <li class="footer__nav-item">
+                <a href="#playlists" class="footer__nav-link link">Плейлисты</a>
+              </li>
+
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link link">Сетки</a>
+              </li>
+            </ul>
+
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a href="#about" class="footer__nav-link link">О нас</a>
+              </li>
+
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link link">Новости</a>
+              </li>
+
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link link">Блоги</a>
+              </li>
+
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link link">Топы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
       <div class="footer">
         <div class="footer__bottom">
-          <img src="img/footer-separator.svg" alt="Разделитель в подвале сайта" role="presentation">
+          <img class="footer__bottom-separator" src="img/footer-separator.svg" alt="Разделитель в подвале сайта" role="presentation">
 
           <small class="footer__copyright">W-WAVE ® 2023</small>
         </div>
